@@ -1,0 +1,678 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C86636A22C0C42F1FD0ECEE /* Pods_FDImageHandle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF05033AA375CD6EDF23AFB /* Pods_FDImageHandle.framework */; };
+		6781B0A7206B284400324CEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6781B0A6206B284400324CEF /* AppDelegate.swift */; };
+		6781B0AC206B284400324CEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6781B0AA206B284400324CEF /* Main.storyboard */; };
+		6781B0AE206B284400324CEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6781B0AD206B284400324CEF /* Assets.xcassets */; };
+		6781B0B1206B284400324CEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6781B0AF206B284400324CEF /* LaunchScreen.storyboard */; };
+		6781B0BC206B284400324CEF /* FDImageHandleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6781B0BB206B284400324CEF /* FDImageHandleTests.swift */; };
+		6781B0CA206B28D400324CEF /* FDBleManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6781B0C7206B28D400324CEF /* FDBleManage.swift */; };
+		6781B0CB206B28D400324CEF /* FDDataHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6781B0C8206B28D400324CEF /* FDDataHandle.swift */; };
+		6781B0CC206B28D400324CEF /* FDPeripherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6781B0C9206B28D400324CEF /* FDPeripherModel.swift */; };
+		6781B0D3206B2A0D00324CEF /* FDScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6781B0D1206B2A0C00324CEF /* FDScanViewController.swift */; };
+		6781B0D4206B2A0D00324CEF /* FDScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6781B0D2206B2A0C00324CEF /* FDScanViewController.xib */; };
+		6781B0D7206B2E4400324CEF /* ZCUIView+setRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6781B0D6206B2E4300324CEF /* ZCUIView+setRect.swift */; };
+		6781B0DB206B35AA00324CEF /* FDBaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6781B0DA206B35AA00324CEF /* FDBaseTableView.swift */; };
+		6781B0EC206B3E7F00324CEF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6781B0EA206B3E7F00324CEF /* MainViewController.swift */; };
+		6781B0ED206B3E7F00324CEF /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6781B0EB206B3E7F00324CEF /* MainViewController.xib */; };
+		6781B0F1206B41C100324CEF /* FDConnectStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6781B0F0206B41C100324CEF /* FDConnectStateView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6781B0B8206B284400324CEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6781B09B206B284400324CEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6781B0A2206B284400324CEF;
+			remoteInfo = FDImageHandle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3DF05033AA375CD6EDF23AFB /* Pods_FDImageHandle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FDImageHandle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6781B0A3206B284400324CEF /* FDImageHandle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FDImageHandle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6781B0A6206B284400324CEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6781B0AB206B284400324CEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6781B0AD206B284400324CEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6781B0B0206B284400324CEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6781B0B2206B284400324CEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6781B0B7206B284400324CEF /* FDImageHandleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FDImageHandleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6781B0BB206B284400324CEF /* FDImageHandleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDImageHandleTests.swift; sourceTree = "<group>"; };
+		6781B0BD206B284500324CEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6781B0C7206B28D400324CEF /* FDBleManage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDBleManage.swift; sourceTree = "<group>"; };
+		6781B0C8206B28D400324CEF /* FDDataHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDDataHandle.swift; sourceTree = "<group>"; };
+		6781B0C9206B28D400324CEF /* FDPeripherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDPeripherModel.swift; sourceTree = "<group>"; };
+		6781B0D1206B2A0C00324CEF /* FDScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDScanViewController.swift; sourceTree = "<group>"; };
+		6781B0D2206B2A0C00324CEF /* FDScanViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FDScanViewController.xib; sourceTree = "<group>"; };
+		6781B0D6206B2E4300324CEF /* ZCUIView+setRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ZCUIView+setRect.swift"; sourceTree = "<group>"; };
+		6781B0DA206B35AA00324CEF /* FDBaseTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDBaseTableView.swift; sourceTree = "<group>"; };
+		6781B0E1206B391F00324CEF /* FDImageHandle-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FDImageHandle-Bridging-Header.h"; sourceTree = "<group>"; };
+		6781B0EA206B3E7F00324CEF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		6781B0EB206B3E7F00324CEF /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		6781B0F0206B41C100324CEF /* FDConnectStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDConnectStateView.swift; sourceTree = "<group>"; };
+		8D0399CCDB549AF767ACF37F /* Pods-FDImageHandle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FDImageHandle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FDImageHandle/Pods-FDImageHandle.debug.xcconfig"; sourceTree = "<group>"; };
+		BA4AA722855A0EE8A5CE1D03 /* Pods-FDImageHandle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FDImageHandle.release.xcconfig"; path = "Pods/Target Support Files/Pods-FDImageHandle/Pods-FDImageHandle.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6781B0A0206B284400324CEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C86636A22C0C42F1FD0ECEE /* Pods_FDImageHandle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6781B0B4206B284400324CEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05330149CECAABC836496518 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DF05033AA375CD6EDF23AFB /* Pods_FDImageHandle.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6781B09A206B284300324CEF = {
+			isa = PBXGroup;
+			children = (
+				6781B0A5206B284400324CEF /* FDImageHandle */,
+				6781B0BA206B284400324CEF /* FDImageHandleTests */,
+				6781B0A4206B284400324CEF /* Products */,
+				91240B5118415399578B854C /* Pods */,
+				05330149CECAABC836496518 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6781B0A4206B284400324CEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6781B0A3206B284400324CEF /* FDImageHandle.app */,
+				6781B0B7206B284400324CEF /* FDImageHandleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6781B0A5206B284400324CEF /* FDImageHandle */ = {
+			isa = PBXGroup;
+			children = (
+				6781B0DC206B35E000324CEF /* SuportsFile */,
+				6781B0CD206B296E00324CEF /* Classes */,
+				6781B0C6206B28D400324CEF /* FDBlueManager */,
+				6781B0AD206B284400324CEF /* Assets.xcassets */,
+				6781B0AF206B284400324CEF /* LaunchScreen.storyboard */,
+				6781B0B2206B284400324CEF /* Info.plist */,
+			);
+			path = FDImageHandle;
+			sourceTree = "<group>";
+		};
+		6781B0BA206B284400324CEF /* FDImageHandleTests */ = {
+			isa = PBXGroup;
+			children = (
+				6781B0BB206B284400324CEF /* FDImageHandleTests.swift */,
+				6781B0BD206B284500324CEF /* Info.plist */,
+			);
+			path = FDImageHandleTests;
+			sourceTree = "<group>";
+		};
+		6781B0C6206B28D400324CEF /* FDBlueManager */ = {
+			isa = PBXGroup;
+			children = (
+				6781B0C7206B28D400324CEF /* FDBleManage.swift */,
+				6781B0C8206B28D400324CEF /* FDDataHandle.swift */,
+				6781B0C9206B28D400324CEF /* FDPeripherModel.swift */,
+			);
+			path = FDBlueManager;
+			sourceTree = "<group>";
+		};
+		6781B0CD206B296E00324CEF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6781B0D8206B353F00324CEF /* Base */,
+				6781B0D5206B2E4300324CEF /* Expend */,
+				6781B0CF206B299E00324CEF /* Scan */,
+				6781B0CE206B298200324CEF /* Main */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		6781B0CE206B298200324CEF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6781B0EF206B419C00324CEF /* Views */,
+				6781B0EE206B419300324CEF /* Controllers */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6781B0CF206B299E00324CEF /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				6781B0D0206B29A600324CEF /* Controllers */,
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
+		6781B0D0206B29A600324CEF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6781B0D1206B2A0C00324CEF /* FDScanViewController.swift */,
+				6781B0D2206B2A0C00324CEF /* FDScanViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6781B0D5206B2E4300324CEF /* Expend */ = {
+			isa = PBXGroup;
+			children = (
+				6781B0D6206B2E4300324CEF /* ZCUIView+setRect.swift */,
+			);
+			path = Expend;
+			sourceTree = "<group>";
+		};
+		6781B0D8206B353F00324CEF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6781B0D9206B354700324CEF /* BaseView */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6781B0D9206B354700324CEF /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				6781B0DA206B35AA00324CEF /* FDBaseTableView.swift */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		6781B0DC206B35E000324CEF /* SuportsFile */ = {
+			isa = PBXGroup;
+			children = (
+				6781B0A6206B284400324CEF /* AppDelegate.swift */,
+				6781B0AA206B284400324CEF /* Main.storyboard */,
+				6781B0E1206B391F00324CEF /* FDImageHandle-Bridging-Header.h */,
+			);
+			path = SuportsFile;
+			sourceTree = "<group>";
+		};
+		6781B0EE206B419300324CEF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6781B0EA206B3E7F00324CEF /* MainViewController.swift */,
+				6781B0EB206B3E7F00324CEF /* MainViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6781B0EF206B419C00324CEF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6781B0F0206B41C100324CEF /* FDConnectStateView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		91240B5118415399578B854C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D0399CCDB549AF767ACF37F /* Pods-FDImageHandle.debug.xcconfig */,
+				BA4AA722855A0EE8A5CE1D03 /* Pods-FDImageHandle.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6781B0A2206B284400324CEF /* FDImageHandle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6781B0C0206B284500324CEF /* Build configuration list for PBXNativeTarget "FDImageHandle" */;
+			buildPhases = (
+				D4DF2E2F93B92CBA0E1422DF /* [CP] Check Pods Manifest.lock */,
+				6781B09F206B284400324CEF /* Sources */,
+				6781B0A0206B284400324CEF /* Frameworks */,
+				6781B0A1206B284400324CEF /* Resources */,
+				B02B588097BDC6B63654BAFF /* [CP] Embed Pods Frameworks */,
+				5DB59F09D0EBAAF6BF1CC63D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FDImageHandle;
+			productName = FDImageHandle;
+			productReference = 6781B0A3206B284400324CEF /* FDImageHandle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6781B0B6206B284400324CEF /* FDImageHandleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6781B0C3206B284500324CEF /* Build configuration list for PBXNativeTarget "FDImageHandleTests" */;
+			buildPhases = (
+				6781B0B3206B284400324CEF /* Sources */,
+				6781B0B4206B284400324CEF /* Frameworks */,
+				6781B0B5206B284400324CEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6781B0B9206B284400324CEF /* PBXTargetDependency */,
+			);
+			name = FDImageHandleTests;
+			productName = FDImageHandleTests;
+			productReference = 6781B0B7206B284400324CEF /* FDImageHandleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6781B09B206B284400324CEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = zhangchong;
+				TargetAttributes = {
+					6781B0A2206B284400324CEF = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					6781B0B6206B284400324CEF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6781B0A2206B284400324CEF;
+					};
+				};
+			};
+			buildConfigurationList = 6781B09E206B284400324CEF /* Build configuration list for PBXProject "FDImageHandle" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6781B09A206B284300324CEF;
+			productRefGroup = 6781B0A4206B284400324CEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6781B0A2206B284400324CEF /* FDImageHandle */,
+				6781B0B6206B284400324CEF /* FDImageHandleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6781B0A1206B284400324CEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6781B0B1206B284400324CEF /* LaunchScreen.storyboard in Resources */,
+				6781B0AE206B284400324CEF /* Assets.xcassets in Resources */,
+				6781B0ED206B3E7F00324CEF /* MainViewController.xib in Resources */,
+				6781B0AC206B284400324CEF /* Main.storyboard in Resources */,
+				6781B0D4206B2A0D00324CEF /* FDScanViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6781B0B5206B284400324CEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5DB59F09D0EBAAF6BF1CC63D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FDImageHandle/Pods-FDImageHandle-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B02B588097BDC6B63654BAFF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FDImageHandle/Pods-FDImageHandle-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDAutoLayout/SDAutoLayout.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDAutoLayout.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FDImageHandle/Pods-FDImageHandle-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4DF2E2F93B92CBA0E1422DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FDImageHandle-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6781B09F206B284400324CEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6781B0DB206B35AA00324CEF /* FDBaseTableView.swift in Sources */,
+				6781B0CB206B28D400324CEF /* FDDataHandle.swift in Sources */,
+				6781B0D7206B2E4400324CEF /* ZCUIView+setRect.swift in Sources */,
+				6781B0F1206B41C100324CEF /* FDConnectStateView.swift in Sources */,
+				6781B0CA206B28D400324CEF /* FDBleManage.swift in Sources */,
+				6781B0D3206B2A0D00324CEF /* FDScanViewController.swift in Sources */,
+				6781B0EC206B3E7F00324CEF /* MainViewController.swift in Sources */,
+				6781B0A7206B284400324CEF /* AppDelegate.swift in Sources */,
+				6781B0CC206B28D400324CEF /* FDPeripherModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6781B0B3206B284400324CEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6781B0BC206B284400324CEF /* FDImageHandleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6781B0B9206B284400324CEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6781B0A2206B284400324CEF /* FDImageHandle */;
+			targetProxy = 6781B0B8206B284400324CEF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6781B0AA206B284400324CEF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6781B0AB206B284400324CEF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6781B0AF206B284400324CEF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6781B0B0206B284400324CEF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6781B0BE206B284500324CEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6781B0BF206B284500324CEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6781B0C1206B284500324CEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D0399CCDB549AF767ACF37F /* Pods-FDImageHandle.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4E8S34J8UT;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = FDImageHandle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fd.FDImageHandle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FDImageHandle/SuportsFile/FDImageHandle-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6781B0C2206B284500324CEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA4AA722855A0EE8A5CE1D03 /* Pods-FDImageHandle.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4E8S34J8UT;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = FDImageHandle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fd.FDImageHandle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FDImageHandle/SuportsFile/FDImageHandle-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6781B0C4206B284500324CEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4E8S34J8UT;
+				INFOPLIST_FILE = FDImageHandleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fd.FDImageHandleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FDImageHandle.app/FDImageHandle";
+			};
+			name = Debug;
+		};
+		6781B0C5206B284500324CEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4E8S34J8UT;
+				INFOPLIST_FILE = FDImageHandleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fd.FDImageHandleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FDImageHandle.app/FDImageHandle";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6781B09E206B284400324CEF /* Build configuration list for PBXProject "FDImageHandle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6781B0BE206B284500324CEF /* Debug */,
+				6781B0BF206B284500324CEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6781B0C0206B284500324CEF /* Build configuration list for PBXNativeTarget "FDImageHandle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6781B0C1206B284500324CEF /* Debug */,
+				6781B0C2206B284500324CEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6781B0C3206B284500324CEF /* Build configuration list for PBXNativeTarget "FDImageHandleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6781B0C4206B284500324CEF /* Debug */,
+				6781B0C5206B284500324CEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6781B09B206B284400324CEF /* Project object */;
+}

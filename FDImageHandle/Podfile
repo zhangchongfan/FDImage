@@ -1,0 +1,13 @@
+//#use_frameworks!个别需要用到它，比如reactiveCocoa
+platform :ios, '8.0'
+use_frameworks!
+
+target 'FDImageHandle' do
+    
+    pod 'AFNetworking', '~> 3.1.0'
+    pod 'MJRefresh'
+    pod 'FMDB', '~> 2.5'
+    pod 'SDAutoLayout', '~> 2.1.3'
+    pod 'RxSwift',    '~> 4.0'
+    pod 'RxCocoa',    '~> 4.0'
+end
