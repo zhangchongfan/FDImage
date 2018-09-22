@@ -50,6 +50,7 @@ class MainViewController: UIViewController {
             .rightSpaceToView(view,0)?
             .heightIs(50)
 //        connectStateView.layoutIfNeeded()
+        updateView(imageData: Data())
     }
     
     func configuringBle() {
@@ -124,7 +125,8 @@ class MainViewController: UIViewController {
         i = 0
         transforming = true
         transformProgressLabel.text = "开始传输"
-        bleManager.writeValue(data: FDDataHandle.transformImageData(start: true))
+//        bleManager.writeValue(data: FDDataHandle.transformImageData(start: true))
+        self.transformData()
     }
     
     @IBAction func stopTransform(_ sender: UIButton) {
@@ -141,11 +143,11 @@ class MainViewController: UIViewController {
         let transData = selectImageData as NSData?
         let count = (transData?.length)!%20 == 0 ? (transData?.length)!/20 : (transData?.length)!/20 + 1
         let range = NSMakeRange(i*20, ((transData?.length)! - i*20 - 20) > 0 ? 20 : (transData?.length)! - i*20)
-        let sendData = transData?.subdata(with: range) as! Data
-        bleManager.transformMassiveData(data: sendData)
+        let sendData = transData?.subdata(with: range)
+        bleManager.transformMassiveData(data: sendData!)
         i = i + 1
         if i < count - 1 {
-            print("\(i) + \(sendData)")
+            print("\(i) + \(String(describing: sendData))")
             perform(#selector(transformData), with: self, afterDelay: rate!/1000.0)
             transformProgressLabel.text = "传输:" + String(i*100 / count)
         }else {//完成
@@ -158,12 +160,35 @@ class MainViewController: UIViewController {
         self.present(imagePicker, animated: true, completion: nil)
     }
     
+//    //更新显示
+//    func updateView(imageData: Data) {
+//        let size = imageData.count
+//        sizeLabel.text = "大小:" + String(size) + "byte"
+//        imageView.image = UIImage(data: imageData)
+//        selectImageData = imageData
+//    }
+    
     //更新显示
     func updateView(imageData: Data) {
-        let size = imageData.count
-        sizeLabel.text = "大小:" + String(size) + "byte"
-        imageView.image = UIImage(data: imageData)
-        selectImageData = imageData
+        let image = UIImage(named: "blood_enter_test")
+        let data = image?.bitmapDataWithFileHeader()
+        let size = (data?.count)!
+        sizeLabel.text = "BMP大小:" + String(size) + "byte"
+        imageView.image = UIImage(data: data!)
+        selectImageData = data
+        let home=NSHomeDirectory()//获取沙盒根路径
+        
+        //document文档目录--方法一
+        
+        let documentPath = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory,FileManager.SearchPathDomainMask.userDomainMask,true).last
+        
+        //获取文档目录路径--方法二，沙盒根路径字符串拼接路径
+        
+        let docPath = home+"/Documents/"
+        if let bmpData = selectImageData {
+            let savePath = docPath + "test.bmp"
+            try! bmpData.write(to: URL(fileURLWithPath: savePath))
+        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

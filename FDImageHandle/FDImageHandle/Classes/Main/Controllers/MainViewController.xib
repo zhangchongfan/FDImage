@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -24,7 +24,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="传输速度(毫秒)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQG-HT-nTC">
-                    <rect key="frame" x="30" y="84" width="110" height="25"/>
+                    <rect key="frame" x="30" y="130" width="110" height="25"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="25" id="eSi-9H-8Hy"/>
                     </constraints>
@@ -32,8 +32,8 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入每包的时间间隔" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bdv-z1-UDv">
-                    <rect key="frame" x="147.5" y="81.5" width="219.5" height="30"/>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="20" borderStyle="roundedRect" placeholder="请输入每包的时间间隔" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bdv-z1-UDv">
+                    <rect key="frame" x="147.5" y="127.5" width="219.5" height="30"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="P1S-zG-D56"/>
                     </constraints>
@@ -42,7 +42,7 @@
                     <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大小:0kb" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GU4-55-sxm">
-                    <rect key="frame" x="30" y="126" width="195" height="21"/>
+                    <rect key="frame" x="30" y="172" width="195" height="21"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="omj-Do-a9i"/>
                     </constraints>
@@ -50,7 +50,7 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYW-ez-KuP">
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYW-ez-KuP">
                     <rect key="frame" x="132" y="607" width="110" height="30"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="110" id="M7X-2k-vs4"/>
@@ -80,7 +80,7 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="传输进度:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRW-dj-iNu">
-                    <rect key="frame" x="30" y="162" width="195" height="21"/>
+                    <rect key="frame" x="30" y="208" width="195" height="21"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="M4d-sy-SCz"/>
                     </constraints>
@@ -88,8 +88,8 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wqr-Bj-3s9">
-                    <rect key="frame" x="72" y="207" width="219" height="290"/>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wqr-Bj-3s9">
+                    <rect key="frame" x="72" y="273" width="219" height="224"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
             </subviews>
@@ -106,7 +106,7 @@
                 <constraint firstAttribute="trailing" secondItem="Bdv-z1-UDv" secondAttribute="trailing" constant="8" id="b7v-RF-wH8"/>
                 <constraint firstItem="Bdv-z1-UDv" firstAttribute="centerY" secondItem="wQG-HT-nTC" secondAttribute="centerY" id="bJP-6T-cvy"/>
                 <constraint firstAttribute="trailing" secondItem="GU4-55-sxm" secondAttribute="trailing" constant="150" id="ecJ-Hj-m26"/>
-                <constraint firstItem="wQG-HT-nTC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="84" id="h7g-fh-2oG"/>
+                <constraint firstItem="wQG-HT-nTC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="130" id="h7g-fh-2oG"/>
                 <constraint firstItem="6Z2-bU-8s9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="65" id="ha5-JB-g6V"/>
                 <constraint firstItem="LRW-dj-iNu" firstAttribute="leading" secondItem="GU4-55-sxm" secondAttribute="leading" id="kTD-GR-QXN"/>
                 <constraint firstAttribute="bottom" secondItem="hYW-ez-KuP" secondAttribute="bottom" constant="30" id="p3Z-B9-8hQ"/>

@@ -23,6 +23,11 @@
 		6781B0EC206B3E7F00324CEF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6781B0EA206B3E7F00324CEF /* MainViewController.swift */; };
 		6781B0ED206B3E7F00324CEF /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6781B0EB206B3E7F00324CEF /* MainViewController.xib */; };
 		6781B0F1206B41C100324CEF /* FDConnectStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6781B0F0206B41C100324CEF /* FDConnectStateView.swift */; };
+		6796EF28213D669200788568 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 6796EF27213D669100788568 /* test.png */; };
+		6796EF2B213D66D400788568 /* UIImage+BitmapData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6796EF2A213D66D400788568 /* UIImage+BitmapData.m */; };
+		6796EF2F213D68F400788568 /* blood_enter_test.png in Resources */ = {isa = PBXBuildFile; fileRef = 6796EF2C213D68F400788568 /* blood_enter_test.png */; };
+		6796EF30213D68F400788568 /* blood_enter_test@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6796EF2D213D68F400788568 /* blood_enter_test@3x.png */; };
+		6796EF31213D68F400788568 /* blood_enter_test@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6796EF2E213D68F400788568 /* blood_enter_test@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +62,12 @@
 		6781B0EA206B3E7F00324CEF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		6781B0EB206B3E7F00324CEF /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		6781B0F0206B41C100324CEF /* FDConnectStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDConnectStateView.swift; sourceTree = "<group>"; };
+		6796EF27213D669100788568 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		6796EF29213D66D400788568 /* UIImage+BitmapData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BitmapData.h"; sourceTree = "<group>"; };
+		6796EF2A213D66D400788568 /* UIImage+BitmapData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BitmapData.m"; sourceTree = "<group>"; };
+		6796EF2C213D68F400788568 /* blood_enter_test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blood_enter_test.png; sourceTree = "<group>"; };
+		6796EF2D213D68F400788568 /* blood_enter_test@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blood_enter_test@3x.png"; sourceTree = "<group>"; };
+		6796EF2E213D68F400788568 /* blood_enter_test@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blood_enter_test@2x.png"; sourceTree = "<group>"; };
 		8D0399CCDB549AF767ACF37F /* Pods-FDImageHandle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FDImageHandle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FDImageHandle/Pods-FDImageHandle.debug.xcconfig"; sourceTree = "<group>"; };
 		BA4AA722855A0EE8A5CE1D03 /* Pods-FDImageHandle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FDImageHandle.release.xcconfig"; path = "Pods/Target Support Files/Pods-FDImageHandle/Pods-FDImageHandle.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +122,10 @@
 		6781B0A5206B284400324CEF /* FDImageHandle */ = {
 			isa = PBXGroup;
 			children = (
+				6796EF2C213D68F400788568 /* blood_enter_test.png */,
+				6796EF2E213D68F400788568 /* blood_enter_test@2x.png */,
+				6796EF2D213D68F400788568 /* blood_enter_test@3x.png */,
+				6796EF27213D669100788568 /* test.png */,
 				6781B0DC206B35E000324CEF /* SuportsFile */,
 				6781B0CD206B296E00324CEF /* Classes */,
 				6781B0C6206B28D400324CEF /* FDBlueManager */,
@@ -181,6 +196,8 @@
 			isa = PBXGroup;
 			children = (
 				6781B0D6206B2E4300324CEF /* ZCUIView+setRect.swift */,
+				6796EF29213D66D400788568 /* UIImage+BitmapData.h */,
+				6796EF2A213D66D400788568 /* UIImage+BitmapData.m */,
 			);
 			path = Expend;
 			sourceTree = "<group>";
@@ -325,10 +342,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6781B0B1206B284400324CEF /* LaunchScreen.storyboard in Resources */,
+				6796EF30213D68F400788568 /* blood_enter_test@3x.png in Resources */,
 				6781B0AE206B284400324CEF /* Assets.xcassets in Resources */,
 				6781B0ED206B3E7F00324CEF /* MainViewController.xib in Resources */,
+				6796EF31213D68F400788568 /* blood_enter_test@2x.png in Resources */,
 				6781B0AC206B284400324CEF /* Main.storyboard in Resources */,
 				6781B0D4206B2A0D00324CEF /* FDScanViewController.xib in Resources */,
+				6796EF2F213D68F400788568 /* blood_enter_test.png in Resources */,
+				6796EF28213D669200788568 /* test.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +431,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6796EF2B213D66D400788568 /* UIImage+BitmapData.m in Sources */,
 				6781B0DB206B35AA00324CEF /* FDBaseTableView.swift in Sources */,
 				6781B0CB206B28D400324CEF /* FDDataHandle.swift in Sources */,
 				6781B0D7206B2E4400324CEF /* ZCUIView+setRect.swift in Sources */,
